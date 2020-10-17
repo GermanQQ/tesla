@@ -1,0 +1,142 @@
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+
+body{
+
+    height: 100vh; 
+    overflow: hidden;
+    transition: all linear 0.5s;
+    
+}
+.backgtound
+{
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    transform: scale(1);
+    object-fit: cover;
+    transition: all linear 0.5s;
+    
+}
+.points{
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    transition: all linear 0.5s;
+}
+.points__link
+{
+    color: white;
+    font-size: 50px;
+    max-height: 5px;
+}
+.logo img{
+    width: 100px;
+}
+
+.header{
+    height: 80px;
+    padding: 30px 30px;
+    transition: all linear 0.5s;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #ffffff;
+}
+.nav__ul{
+    display: flex;
+    flex-direction: row;
+}
+.nav__li{
+    margin-right: 30px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.singin{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.slide_2{
+    color: #E04040;
+}
+.model{
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 12%;
+    text-align: center;
+}
+
+.name_S{
+    opacity: 0;
+    left: 0%;
+    transition: all linear 0.5s;
+}
+.name_3{
+    opacity: 0;
+    right: 40%;
+    transition: all linear 0.5s;
+}
+.name_X{
+    opacity: 0;
+    right: -10%;
+    transition: all linear 0.5s;
+}
+/* .hidden_1{
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    border: 1px solid black;
+    left: 0;
+}
+.hidden_2{
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    border: 1px solid black;
+    right: 0;
+} */
+
+    @media (min-width: 2500px){
+        .nav__li{
+            font-size: 40px;
+        }
+        .singin{
+            font-size: 40px;
+        }
+        .logo img{
+            width: 220px;
+        }
+        .model{
+            font-size: 80px;
+            margin-top: 20%;
+        }
+        .points__link{
+            font-size: 100px;
+        }
+        .name_X{
+            transform: translateX(900%);
+        }
+    }
